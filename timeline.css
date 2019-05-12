@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  background-image: url(bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 3em;
+}
+
+.heading:hover {
+  transition: 0.9s;
+  transform: rotateX(180deg);
+}
+
+.heading svg {
+  width: 80%;
+}
+
+.heading path {
+  stroke: rgb(179, 34, 34);
+  fill: rgb(179, 34, 34);
+  stroke-dasharray: 1800;
+  opacity: 10;
+  animation: animate 4s linear;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 1800;
+  }
+
+  30% {
+    opacity: 5;
+    fill: none;
+    stroke-dashoffset: 1800;
+  }
+  50% {
+    opacity: 10;
+    fill: none;
+    stroke-dashoffset: 1800;
+  }
+
+  80% {
+    fill: rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    opacity: 10;
+    fill: rgb(179, 34, 34);
+    stroke-dashoffset: 0;
+  }
+}
+
+.greeting {
+  font-size: 30px;
+  text-align: center;
+  padding: 1em;
+  color: rgb(179, 34, 34);
+  font-family: "Acumin Variable Concept", sans-serif;
+  font-weight: 600;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  display: none;
+}
+
+.heading:hover ~ .greeting {
+  display: block;
+}
+
+path.st1,
+path.st3,
+path.st4,
+path.st5,
+path.st6,
+path.st7,
+path.st8,
+path.st9,
+path.st12,
+path.st10,
+path.st13,
+path.st14,
+path.st15,
+path.st16,
+path.st17,
+path.st18,
+path.st19 {
+  animation: blinking 2s ease-in infinite;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 0.3;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#rect1 {
+  stroke: black;
+  fill: transparent;
+  stroke-dasharray: 1800;
+  opacity: 10;
+  animation: rectangling 4s linear;
+}
+
+@keyframes rectangling {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 1800;
+  }
+
+  30% {
+    opacity: 5;
+    fill: none;
+    stroke-dashoffset: 1800;
+    stroke: rgb(179, 34, 34);
+  }
+  50% {
+    opacity: 10;
+    fill: none;
+    stroke-dashoffset: 1800;
+    stroke: rgb(179, 34, 34);
+  }
+
+  80% {
+    fill: none;
+  }
+
+  100% {
+    opacity: 10;
+    fill: none;
+
+    stroke-dashoffset: 0;
+  }
+}
+
+.sttimeline {
+  text-align: center;
+}
